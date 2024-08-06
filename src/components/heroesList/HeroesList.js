@@ -1,7 +1,7 @@
-import {useHttp} from '../../hooks/http.hook';
+import { useHttp } from '../../hooks/http.hook';
 import { useEffect, useCallback } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { CSSTransition, TransitionGroup} from 'react-transition-group';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
 import { heroesFetching, heroesFetched, heroesFetchingError, heroDeleted } from '../../actions';
 import HeroesListItem from "../heroesListItem/HeroesListItem";
@@ -13,11 +13,11 @@ import './heroesList.scss';
 // При клике на "крестик" идет удаление персонажа из общего состояния
 // Усложненная задача:
 // Удаление идет и с json файла при помощи метода DELETE
-
+//
 const HeroesList = () => {
-    const {filteredHeroes, heroesLoadingStatus} = useSelector(state => state);
+    const { filteredHeroes, heroesLoadingStatus } = useSelector(state => state);
     const dispatch = useDispatch();
-    const {request} = useHttp();
+    const { request } = useHttp();
 
     useEffect(() => {
         dispatch(heroesFetching());
@@ -41,7 +41,7 @@ const HeroesList = () => {
     }, [request]);
 
     if (heroesLoadingStatus === "loading") {
-        return <Spinner/>;
+        return <Spinner />;
     } else if (heroesLoadingStatus === "error") {
         return <h5 className="text-center mt-5">Ошибка загрузки</h5>
     }
@@ -57,13 +57,13 @@ const HeroesList = () => {
             )
         }
 
-        return arr.map(({id, ...props}) => {
+        return arr.map(({ id, ...props }) => {
             return (
-                <CSSTransition 
+                <CSSTransition
                     key={id}
                     timeout={500}
                     classNames="hero">
-                    <HeroesListItem  {...props} onDelete={() => onDelete(id)}/>
+                    <HeroesListItem  {...props} onDelete={() => onDelete(id)} />
                 </CSSTransition>
             )
         })
