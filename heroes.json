@@ -29,6 +29,12 @@
       "name": "Мария",
       "description": "много",
       "element": "earth"
+    },
+    {
+      "id": "8ea085d3-47dc-46bb-b5a2-d16fc649d3f3",
+      "name": "Наталья",
+      "description": "спать",
+      "element": "wind"
     }
   ],
   "filters": [
