@@ -41,6 +41,12 @@
       "name": "Ник",
       "description": "-",
       "element": "fire"
+    },
+    {
+      "id": "f72b440d-e17c-4591-993f-f3d024aa740f",
+      "name": "vvv",
+      "description": "vvvvvvvvv",
+      "element": "earth"
     }
   ],
   "filters": [
