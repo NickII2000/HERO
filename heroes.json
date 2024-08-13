@@ -35,6 +35,12 @@
       "name": "Наталья",
       "description": "спать",
       "element": "wind"
+    },
+    {
+      "id": "574d3c04-7833-4b88-b369-07797d7bc629",
+      "name": "Ник",
+      "description": "-",
+      "element": "fire"
     }
   ],
   "filters": [
