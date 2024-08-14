@@ -25,15 +25,21 @@ const HeroesList = () => {
                 console.log('RENDER');
                 return heroes;
             } else {
-                return heroes.filter(item => item.element === filter;
+                return heroes.filter(item => item.element === filter);
             }
         }
     );
 
-    const filteredHeroes = useSelector(state => {
+    // const filteredHeroes = useSelector(state => {
+    //     if (state.filters.activeFilter === 'all') {
+    //         console.log('RENDER');
+    //         return state.heroes.heroes;
+    //     } else {
+    //         return state.heroes.heroes.filter(item => item.element === state.filters.activeFilter);
+    //     }
+    // });
 
-    });
-
+    const filteredHeroes = useSelector(filteredHeroesSelector);
     const heroesLoadingStatus = useSelector(state => state.heroesLoadingStatusheroesLoadingStatus);
     const dispatch = useDispatch();
     const { request } = useHttp();
