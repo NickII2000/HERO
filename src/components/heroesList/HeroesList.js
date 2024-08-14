@@ -2,6 +2,7 @@ import { useHttp } from '../../hooks/http.hook';
 import { useEffect, useCallback } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
+import { createSelector } from 'reselect';
 
 import { heroesFetching, heroesFetched, heroesFetchingError, heroDeleted } from '../../actions';
 import HeroesListItem from "../heroesListItem/HeroesListItem";
@@ -13,14 +14,24 @@ import './heroesList.scss';
 // При клике на "крестик" идет удаление персонажа из общего состояния
 // Усложненная задача:
 // Удаление идет и с json файла при помощи метода DELETE
-// // -- "34-th commit" --
-const HeroesList = (props) => {
-    const filteredHeroes = useSelector(state => {
-        if (state.filters.activeFilter === 'all') {
-            return state.heroes.heroes;
-        } else {
-            return state.heroes.heroes.filter(item => item.element === state.filters.activeFilter);
+// // -- "35-th commit" --
+const HeroesList = () => {
+
+    const filteredHeroesSelector = createSelector(
+        (state) => state.filters.activeFilter,
+        (state) => state.heroes.heroes,
+        (filter, heroes) => {
+            if (filter === 'all') {
+                console.log('RENDER');
+                return heroes;
+            } else {
+                return heroes.filter(item => item.element === filter;
+            }
         }
+    );
+
+    const filteredHeroes = useSelector(state => {
+
     });
 
     const heroesLoadingStatus = useSelector(state => state.heroesLoadingStatusheroesLoadingStatus);
