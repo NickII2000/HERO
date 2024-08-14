@@ -13,16 +13,16 @@ import './heroesList.scss';
 // При клике на "крестик" идет удаление персонажа из общего состояния
 // Усложненная задача:
 // Удаление идет и с json файла при помощи метода DELETE
-// // -- "32-th commit" --
-const HeroesList = () => {
+// // -- "33-th commit" --
+const HeroesList = (props) => {
     const filteredHeroes = useSelector(state => {
         if (state.activeFilter === 'all') {
             return state.heroes;
         } else {
             return state.heroes.filter(item => item.element === state.activeFilter);
         }
-
     });
+
     const heroesLoadingStatus = useSelector(state => state.heroesLoadingStatusheroesLoadingStatus);
     const dispatch = useDispatch();
     const { request } = useHttp();
