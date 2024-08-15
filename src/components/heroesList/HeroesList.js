@@ -14,7 +14,7 @@ import './heroesList.scss';
 // При клике на "крестик" идет удаление персонажа из общего состояния
 // Усложненная задача:
 // Удаление идет и с json файла при помощи метода DELETE
-// // -- "41-th commit" --
+// // -- "42-th commit" --
 const HeroesList = () => {
 
     const filteredHeroesSelector = createSelector(
@@ -25,7 +25,7 @@ const HeroesList = () => {
                 console.log('Render All');
                 return heroes;
             } else {
-                console.log('Render chioce');
+                console.log(`Render ${filter}`);
                 return heroes.filter(item => item.element === filter);
             }
         }
