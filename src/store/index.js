@@ -19,8 +19,7 @@ const enhancer = (createStore) => (...args) => {
 };
 
 // const store = createStore(combineReducers({ heroes: heroes, filters: filters }),
-const store = createStore(combineReducers({ heroes, filters }, enhancer),
-);
+const store = createStore(combineReducers({ heroes, filters }), enhancer);
 
 export default store;
 
