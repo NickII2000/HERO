@@ -9,30 +9,30 @@ const heroes = (state = initialState, action) => {
             return {
                 ...state,
                 heroesLoadingStatus: 'loading'
-            }
+            };
         case 'HEROES_FETCHED':
             return {
                 ...state,
                 heroes: action.payload
-            }
+            };
         case 'HEROES_FETCHING_ERROR':
             return {
                 ...state,
                 heroesLoadingStatus: 'error'
-            }
+            };
         case 'HERO_CREATED':
             // Формируем новый массив    
             return {
                 ...state,
                 heroes: [...state.heroes, action.payload]
-            }
+            };
         case 'HERO_DELETED':
             // Формируем новый массив
             return {
                 ...state,
                 heroes: state.heroes.filter(item => item.id !== action.payload)
-            }
-        default: return state
+            };
+        default: return state;
     }
 }
 
