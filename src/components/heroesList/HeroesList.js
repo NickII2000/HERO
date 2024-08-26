@@ -7,7 +7,7 @@ import { fetchHeroes, heroDeleted } from '../../actions';
 import HeroesListItem from "../heroesListItem/HeroesListItem";
 import Spinner from '../spinner/Spinner';
 import './heroesList.scss';
-// // -- "83-th commit" --
+// // -- "84-th commit" --
 
 const HeroesList = () => {
     const filteredHeroesSelector = createSelector(
@@ -31,7 +31,6 @@ const HeroesList = () => {
 
     useEffect(() => {
         dispatch(fetchHeroes(request));
-
         // eslint-disable-next-line
     }, []);
 
