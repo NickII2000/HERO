@@ -7,7 +7,7 @@ import { fetchHeroes, heroDeleted } from '../../actions';
 import HeroesListItem from "../heroesListItem/HeroesListItem";
 import Spinner from '../spinner/Spinner';
 import './heroesList.scss';
-// // -- "91-th commit" --
+// // -- "92-th commit" --
 
 const HeroesList = () => {
     const filteredHeroesSelector = createSelector(
