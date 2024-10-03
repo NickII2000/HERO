@@ -10,7 +10,7 @@ import { heroDeleted } from './heroesSlice';
 import HeroesListItem from "../heroesListItem/HeroesListItem";
 import Spinner from '../spinner/Spinner';
 import './heroesList.scss';
-// // --- "133-th commit" ---
+// // --- "134-th commit" ---
 
 const HeroesList = () => {
     const filteredHeroesSelector = createSelector(
