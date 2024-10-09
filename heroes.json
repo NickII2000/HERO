@@ -59,6 +59,12 @@
       "name": "vvv",
       "description": "654",
       "element": "earth"
+    },
+    {
+      "id": "3a4eacee-229e-47b0-a879-2b29223abf47",
+      "name": "007",
+      "description": "all",
+      "element": "fire"
     }
   ],
   "filters": [
