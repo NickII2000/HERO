@@ -59,6 +59,12 @@
       "name": "007",
       "description": "all",
       "element": "fire"
+    },
+    {
+      "id": "ff1ca54f-9c1d-4b20-b6c3-d949924c2eeb",
+      "name": "Наталья",
+      "description": "all",
+      "element": "water"
     }
   ],
   "filters": [
