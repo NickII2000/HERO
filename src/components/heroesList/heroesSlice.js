@@ -1,4 +1,5 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
+import { useHttp } from '../../hooks/http.hook';
 
 const initialState = {
     heroes: [],
@@ -9,7 +10,7 @@ const heroesSlice = createSlice({
     name: 'heroes',
     initialState,
     reducers: {
-        heroesFetching: state => {state.heroesLoadingStatus = 'loading'},
+        heroesFetching: state => { state.heroesLoadingStatus = 'loading' },
         heroesFetched: (state, action) => {
             state.heroesLoadingStatus = 'idle';
             state.heroes = action.payload;
@@ -26,7 +27,7 @@ const heroesSlice = createSlice({
     }
 });
 
-const {actions, reducer} = heroesSlice;
+const { actions, reducer } = heroesSlice;
 
 export default reducer;
 export const {
