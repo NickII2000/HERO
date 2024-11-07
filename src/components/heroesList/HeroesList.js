@@ -10,7 +10,7 @@ import HeroesListItem from "../heroesListItem/HeroesListItem";
 import Spinner from '../spinner/Spinner';
 
 import './heroesList.scss';
-// // ---  "220-th commit"  ---
+// // ---  "221-th commit"  ---
 
 const HeroesList = () => {
 
@@ -32,7 +32,7 @@ const HeroesList = () => {
     const { request } = useHttp();
 
     useEffect(() => {
-        dispatch(fetchHeroes(request));
+        dispatch(fetchHeroes());
         // eslint-disable-next-line
     }, []);
 

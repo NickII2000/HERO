@@ -65,6 +65,18 @@
       "name": "Николай",
       "description": "Почти всё",
       "element": "fire"
+    },
+    {
+      "id": "5c80fccd-3d2c-4594-b622-796b68112514",
+      "name": "fdsdgsd",
+      "description": "555",
+      "element": "wind"
+    },
+    {
+      "id": "74a158f8-c954-4de3-9549-c5e78c40fbb3",
+      "name": "vvvcc",
+      "description": "77",
+      "element": "earth"
     }
   ],
   "filters": [
