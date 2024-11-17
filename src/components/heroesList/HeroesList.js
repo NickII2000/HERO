@@ -10,7 +10,7 @@ import HeroesListItem from "../heroesListItem/HeroesListItem";
 import Spinner from '../spinner/Spinner';
 
 import './heroesList.scss';
-// // ---  "238-th commit"  ---
+// // ---  "239-th commit"  ---
 
 const HeroesList = () => {
 
