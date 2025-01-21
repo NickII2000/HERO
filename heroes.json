@@ -23,6 +23,18 @@
       "name": "Миша",
       "description": "All",
       "element": "earth"
+    },
+    {
+      "id": "539a3154-0b1b-4d6d-9530-5625739d5277",
+      "name": "Наталья",
+      "description": "+++",
+      "element": "water"
+    },
+    {
+      "id": "84e2a52e-bdd3-433b-8785-1d0a72f90748",
+      "name": "Николай",
+      "description": "+",
+      "element": "fire"
     }
   ],
   "filters": [
