@@ -13,7 +13,7 @@ import HeroesListItem from "../heroesListItem/HeroesListItem";
 import Spinner from "../spinner/Spinner";
 
 import "./heroesList.scss";
-// // ----  "525-th commit"  ----
+// // ----  "526-th commit"  ----
 
 const HeroesList = () => {
 	const filteredHeroes = useSelector(filteredHeroesSelector);
