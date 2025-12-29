@@ -35,6 +35,18 @@
       "name": "Николай",
       "description": "+",
       "element": "fire"
+    },
+    {
+      "id": "de0847ab-7a56-4963-8362-91b07215da6d",
+      "name": "Егор",
+      "description": "петь",
+      "element": "earth"
+    },
+    {
+      "id": "27fe6f2f-0c1f-482b-a906-59e6432f851e",
+      "name": "Илья",
+      "description": "рисовать",
+      "element": "wind"
     }
   ],
   "filters": [
