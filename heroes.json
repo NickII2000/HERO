@@ -47,6 +47,12 @@
       "name": "Илья",
       "description": "рисовать",
       "element": "wind"
+    },
+    {
+      "id": "94d53b1e-6b0c-4699-9bb1-64d3b32cdd86",
+      "name": "Второй герой",
+      "description": "Второй герой в рейтинге",
+      "element": "fire"
     }
   ],
   "filters": [
